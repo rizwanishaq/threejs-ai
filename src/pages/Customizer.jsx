@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useSnapshot } from "valtio";
 import axios from "axios";
-import { DeviceUUID } from "device-uuid";
 
 import config from "../config/config";
 import state from "../store";
@@ -64,7 +63,7 @@ const Customizer = () => {
         "https://riisbitec.onrender.com/api/machinelearning/stable_diffusion",
         {
           prompt: `${prompt}`,
-          device_uid: `${uuid}`,
+          device_uid: "testing",
         },
         {
           headers: {
