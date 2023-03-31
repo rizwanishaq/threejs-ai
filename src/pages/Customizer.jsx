@@ -19,7 +19,6 @@ import {
 
 const Customizer = () => {
   const snap = useSnapshot(state);
-  const uuid = new DeviceUUID().get();
 
   const [file, setFile] = useState("");
 
